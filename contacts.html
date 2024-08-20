@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f6c3d9febf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Contacts</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;;
+font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+main div.con{
+    height: 200vh;
+    width: 100%;
+
+}
+main div table caption h1{
+    font-size: 2.5rem;
+}
+
+
+a{
+    color: #0082e6;
+}
+header nav ul li a:hover{
+    background-color: #0082e6;
+    transition: .5s ;
+}
+
+
+
+
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: bold;
+ }
+ label.logo a{
+     color: white;
+ }
+nav ul{ 
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration-style: bold;
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: 5px 13px;
+    border-radius: 3px;
+}
+a.active,a :hover{
+    background: #1b9bff;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width: 980px){
+    label.logo{
+        font-size: 1.1rem;
+        padding-left: 50px;
+           
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media(max-width: 868px){
+.checkbtn{
+    display: block;
+}
+label.logo{
+    font-size: 1.1rem;
+    padding-left: 35px;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #070808;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 1rem;
+}
+a:hover,a.active{
+    background: none;
+    color: #0082e6;
+}
+#check:checked~ul{
+    left: 0;
+}
+main div table caption h1{
+    font-size: 1.4rem;
+}
+}
+main a{
+    text-decoration: none;
+    font-size: 17px;
+}
+ main div.icon{
+    position: fixed;
+    left: 40px;
+    top: 45%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+main div.icon a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+
+}
+main div.icon{
+    color: rgb(39, 39, 39)0.80;
+}
+main div.icon a:hover .fa-facebook{ color: #316FF6;}
+main div.icon a:hover .fa-twitter{ color: #00acee;}
+main div.icon a:hover .fa-whatsapp{ color: #25D366;}
+main div.icon a:hover .fa-youtube{color: red;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a href="index.html">HSC ALL BOARD QUSTION</a></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contacts.html" class="active">Contacts</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="fed.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <div class="icon">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </main>
+    
+</body>
+</html>
