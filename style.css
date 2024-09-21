@@ -37,6 +37,7 @@ label.logo{
 
  }
 nav ul{ 
+    padding: 0;
     float: right;
     margin-right: 20px;
 }
@@ -118,8 +119,6 @@ div.container h2{
     font-size: 1.9rem;
 }
 }
-
-
 #home {
     background-image: url(Capture.PNG);
     background-size: cover;
@@ -148,8 +147,6 @@ div.container h2{
 .container p {
     font-size: 1.2em;
 }
-
-
 section {
     margin: auto;
 }
