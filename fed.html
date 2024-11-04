@@ -16,8 +16,9 @@
     box-sizing: border-box;
 }
 body{
-font-family: 'Poppins', sans-serif;;
+font-family: 'outfit' 'Poppins', sans-serif;
 font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+background: linear-gradient(#ffdad5, #fff7f9);
 }
 main div.con{
     height: 200vh;
@@ -89,6 +90,73 @@ a.active,a :hover{
 #check{
     display: none;
 }
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    /* padding-left: 2%; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 2.5rem;
+}
+.contact-left-title hr{
+    border: none;
+    width: 7.5rem;
+    height: 0.313rem;
+    background-color: #a363aa;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625;
+}
+.contact-inputs{
+    width: 25rem;
+    height: 3.125rem;
+    border: none;
+    outline: none;
+    padding-left: 1.563rem;
+    font-weight: 500;
+    color: #666;
+    border-radius: 3.125rem;
+}
+.contact-left textarea{
+    height: 8.75rem;
+    padding-top: 0.936rem ;
+    border-radius: 1.25rem;
+}
+.contact-inputs:focus{
+    border: 0.125rem solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15x, 30px;
+    font-size: 1rem;
+    color: #fff;
+    gap: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(270deg,#ff994f, #fa6d86);
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 0.93rem;
+
+}
+.contact-right img{
+    width: 500px;
+}
 @media(max-width: 980px){
     label.logo{
         font-size: 1.1rem;
@@ -100,7 +168,7 @@ a.active,a :hover{
 
     }
 }
-@media(max-width: 868px){
+@media(max-width: 850px){
 .checkbtn{
     display: block;
 }
@@ -136,6 +204,12 @@ a:hover,a.active{
 main div table caption h1{
     font-size: 1.4rem;
 }
+.contact-inputs{
+    width: 85vw;
+}
+.contact-right{
+    display: none;
+}
 }
     </style>
 </head>
@@ -156,5 +230,20 @@ main div table caption h1{
             </ul>
         </nav>
     </header>
+    <div class="contact-container">
+        <form  class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs"  required>
+            <input type="email" name="Email" placeholder="Your Email" class="contact-inputs"  required>
+            <textarea name="message" placeholder="Your Message"  class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="right_img.png" alt="background">
+        </div>
+    </div>
 </body>
 </html>
