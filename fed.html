@@ -231,11 +231,13 @@ main div table caption h1{
         </nav>
     </header>
     <div class="contact-container">
-        <form  class="contact-left">
+        <form  class="contact-left" action="https://api.web3forms.com/submit" method="POST">
             <div class="contact-left-title">
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="e9da64a8-e57a-4fae-ba2a-4942da78a325">
+            <input type="hidden" name="HSC ALL BOARD QUESTION : New message ...">
             <input type="text" name="Name" placeholder="Your Name" class="contact-inputs"  required>
             <input type="email" name="Email" placeholder="Your Email" class="contact-inputs"  required>
             <textarea name="message" placeholder="Your Message"  class="contact-inputs" required></textarea>
